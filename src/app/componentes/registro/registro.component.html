@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    
+<h1>Registrarse</h1>
+
+<form >
+    <ul>
+        <li>
+            <label for="nombre">Nombres</label>
+            <input class="form-control" type="text">
+        </li>
+        <li>
+            <label for="apellido">Apellidos</label>
+            <input class="form-control" type="text">
+        </li>
+
+        <li>
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+
+        </li>
+        <li>
+            <label for="pais">País</label>
+            <input class="form-control" type="text"><!--creo que es tipo select pero no queda claro-->
+        </li>
+        <li>
+            <label for="passw">Contraseña</label>
+            <input type="password" class="form-control" id=passw placeholder="Contraseña">
+            
+        </li>
+        <li>
+            <label for="ciudad">Ciudad</label>
+            <input class="form-control" type="text">
+        </li>
+        <li>
+            <label for="documento">Documento</label>
+            <input class="form-control" type="text">
+        </li>
+        <li>
+            <label for="telefono">Teléfono</label>
+            <input class="form-control" type="text">
+        </li>
+        <li>
+            <p>SUBIR PDF 'FALTA UN RECUADRO-ACEPTE DOCUMENTOS'</p>
+            <P>	CAPTCHA</P>
+        </li>
+        <li>
+            <button type="submit" class="btn btn-primary" [routerLink]="['/']" routerLinkActive="router-link-active" >Registrarse</button>
+        </li>
+    </ul>
+</form>
+
+</div>

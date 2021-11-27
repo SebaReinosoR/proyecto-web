@@ -1,0 +1,39 @@
+<h1>Inicio de Sesión</h1>
+
+<div class="container-fluid">
+    <form >
+
+        <ul>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </li>
+            <li>
+                <label for="passw">Contraseña</label>
+                <input type="password" class="form-control" id=passw placeholder="Contraseña">
+            </li>
+            <li>
+                <input class="form-check-input" type="checkbox" value="" id="recordar">
+                <label class="form-check-label" for="recordar">Recordar Contraseña</label>
+            </li>
+    
+            <li>
+                <button type="submit" class="btn btn-primary"[routerLink]="['/perfil']" routerLinkActive="router-link-active" >Iniciar Sesión</button>
+                <p>Inicia sesión como empresa o profesional</p>
+            </li>
+            <li>
+                <p>--------------- o -----------------</p>
+                <p>Inicia sesión con</p>
+                <button type="submit" class="btn btn">Facebook</button> <!--agregar icono-->
+                <button type="submit" class="btn btn">Google</button> <!--agregar icono-->
+            </li>
+            <li>
+                <p>¿Aún no tienes una cuenta?</p>
+                <button type="submit" class="btn btn" [routerLink]="['/registro']" routerLinkActive="router-link-active" >Registrate</button>
+            </li>
+        </ul>   
+    </form>
+
+    <footer> <p>Al registrarte en la Aplicacion,aceptas nuestros Terminos y Política de privacidad</p> </footer>
+    
+</div>
