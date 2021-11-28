@@ -1,17 +1,28 @@
 <app-header></app-header>
 <div class="container-fluid">
     <div id="izquierda">
-        <h2>Continúa con tus cursos</h2>
-        <p>MUESTRA DE LOS CURSOS EN CURSO</p>
+        <ul>
+            <li id="cursosContinuar">
+                <h2>Continúa con tus cursos</h2>
 
+                <ul id="listacurso">
+                    <li>curso</li>
+                    <li>curso</li>
+                    <li>curso</li>
+                    <li>curso</li>
+                </ul>
+                
+                <button class= "btn btn-dark" [routerLink]="['/cursos']" routerLinkActive="router-link-active" >Ver más cursos</button>
+            </li>
+            <li id ="ofertasLaborales">
 
-        <button class= "btn btn-dark" [routerLink]="['/cursos']" routerLinkActive="router-link-active" >Ver más cursos</button>
+                <h3>Ofertas laborales destacadas</h3>
 
-        <h3>Ofertas laborales destacadas</h3>
+                <p>MUESTRA DE EMPLEOS DESTACADOS</p>
 
+            </li>
+        </ul>
 
-        <p>MUESTRA DE EMPLEOS DESTACADOS</p>
-        
     </div> 
     
 

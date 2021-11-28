@@ -1,27 +1,32 @@
 <div class="container-fluid">
     <ul>
-        <li>
+        <li id="boton">
             <h2 [routerLink]="['/perfil']" routerLinkActive="router-link-active" > Applicación </h2>
         </li>
-        <li>
+        <li id="boton">
             <h2 [routerLink]="['/certificados']" routerLinkActive="router-link-active" > Certificados </h2>
         </li>
-        <li>
+        <li id="boton">
             <h2 [routerLink]="['/cursos']" routerLinkActive="router-link-active" >Cursos</h2>
         </li>
-        <li>
+        <li id="boton">
             <h2 [routerLink]="['/empleo']" routerLinkActive="router-link-active" >Bolsa</h2>
         </li>
-        <li>
+        <li id="barra">
             <h1>|</h1>
+            
         </li>
-        <li>
-            <h2>barra buscador</h2>
+      
+        <li id="buscador">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar en Aplicacion" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
         </li>
-        <li>
+        <li id="boton">
             <h2 [routerLink]="['/notificacion']" routerLinkActive="router-link-active" >campana</h2> <!--cambiar por icono -->
         </li>
-        <li>
+        <li id="boton">
             <h2>perfil</h2> <!--supongo que seran los datos del perfil conectado// poner icono -->
         </li>
     </ul>

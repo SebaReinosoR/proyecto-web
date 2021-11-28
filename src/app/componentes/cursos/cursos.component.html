@@ -1,2 +1,63 @@
 <app-header></app-header>
-<p>cursos works!</p>
+<div class="container-fluid">
+    <nav class="nav flex-column">
+        <div class="nav-item">
+            <h2>Filtrar por: </h2>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar Curso" aria-label="Search">
+                <button class="btn btn-outline-blue" type="submit">Filtrar</button>
+            </form>
+        </div> 
+        <div class="nav-item">
+            <h2>Temática</h2>
+            <form>
+                <ul>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Progamación</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Diseño</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Humanidades</label>   
+                    </li>
+                </ul>  
+            </form>
+        </div>
+        <div class="nav-item">
+            <h2>Duración</h2>
+            <form>
+                <ul>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">2 Módulos</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">3 Módulos</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">4 Módulos</label>   
+                    </li>
+                </ul>  
+            </form>
+        </div>
+    </nav>
+
+    <div id="cursos">
+        <h1>Cursos Disponibles</h1>
+
+        <ul id="listaCursos">
+            <li>
+                <p>curso 1</p>
+            </li>
+            <li>
+                <p>curso 2</p>
+            </li>
+        </ul>
+    </div>
+</div>
