@@ -1,0 +1,27 @@
+<div class="container" >
+    <form [formGroup]="Agregar" (ngSubmit)="Actualizar()">
+        <ul>
+            <li>
+                <label for="id" class= "form-label" class="mt-3" >Nombre</label>
+                <input id="nombre"type="text" class="form-control" formControlName="nombre" [(ngModel)]="nombre" > 
+                <div *ngIf="Agregar.controls['nombre'].invalid && (Agregar.controls['nombre'].dirty || Agregar.controls['nombre'].touched)"  class="alert alert-danger"  > 
+                    Campo requerido
+                </div>
+            </li>
+            <li>
+                <label for="nombre" class= "form-label" class="mt-3" >Rut</label>
+                <input id="rut"type="text" class="form-control" formControlName="rut" [(ngModel)]="rut"> 
+                <div *ngIf="Agregar.controls['rut'].invalid && (Agregar.controls['rut'].dirty || Agregar.controls['rut'].touched)"  class="alert alert-danger"  > 
+                    Campo requerido
+                </div>
+            </li>
+            <li>
+                <button class="mt-4" [disabled]="!Agregar.valid" type="submit">Get</button>
+                <button class="mt-4" [disabled]="!Agregar.valid" (click)="Insetar()">Insetar</button>
+                <button class="mt-4" [disabled]="!Agregar.valid" (click)="Eliminar()">Eliminar</button>
+                <button class="mt-4" [disabled]="!Agregar.valid" (click)="Modificar()">Modificar</button>
+                <button class="mt-4" [disabled]="!Agregar.valid" (click)="Iniciar()">Inicio Sesion</button>
+            </li>
+        </ul>
+    </form>
+</div>
